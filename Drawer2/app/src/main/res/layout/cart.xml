@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    android:background="#F1F1F1"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        tools:listitem="@layout/row">
+
+    </ListView>
+
+    <Button
+        android:layout_marginTop="40dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckOut"
+        android:id="@+id/check"
+        android:layout_weight="0.38" />
+
+</LinearLayout>

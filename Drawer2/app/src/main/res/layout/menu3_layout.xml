@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    android:background="#F1F1F1"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:textColor="#009A57"
+        android:text="Description"
+        android:id="@+id/textView2" />
+
+
+    <ImageView
+
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher"
+        android:layout_weight="0.39"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40dp"
+        android:layout_weight="0.13"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price:"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1000$"
+        android:layout_marginLeft="100dip"
+        android:layout_marginBottom="6dip"
+
+        android:id="@+id/textView3"
+
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp" />
+
+
+</RelativeLayout>
